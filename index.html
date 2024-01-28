@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Matrix</title>
+</head>
+<body>
+    <div class="section" id="section">
+        <div class="sidebar">
+            <div class="sidebar-title">
+                <h1>Matrix</h1>
+            </div>
+            <div class="main-sidebar">
+                <ul>
+                    <li>
+                        <a href="#" class="active">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span>Team</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span>Calendar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-file"></i>
+                            <span>Documents</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house-signal"></i>
+                            <span>Reports</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>  
+            <div class="main-sidebar profile">
+                <div class="profile-image one">
+                    <img src="Images/me.jpg">
+                </div>
+                <div class="profile-info">
+                    <h4>Matrix</h4>
+                    <span>View Profile</span>
+                </div>
+                <div class="profile-settings">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="navbar-container">
+                    <div class="navbar">
+                        <div class="logo">
+                            <img src="Images/My Logo.png">
+                        </div>
+                        <div class="search">
+                            <input type="search" placeholder="Fast Search">
+                        </div>
+                    </div>
+                    <div class="navbar">
+                        <div class="theme">
+                            <input type="checkbox" id="darkmode">
+                            <label for="darkmode" id="darkmode"></label>
+                        </div>
+                        <div class="notifications">
+                            <i class="fa-solid fa-bell fa-"></i>
+                        </div>
+                        <div class="profile-image">
+                            <img src="Images/me.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-one">
+                <div class="welcome">
+                    <div class="welcome-text">
+                        <h2>Hi, Youssef</h2>
+                        <p>Ready To Start Your Day With Some Arrangements ?</p>
+                        <p>You Have <span>16</span> New Application, Check Them Out Now !</p>
+                        <span id="btn">Review It</span>
+                    </div>
+                    <div class="welcome-image">
+                        <img src="Images/Main Image.png">
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-two">
+                <h2 class="main-title">Overview</h2>
+                <div class="overview">
+                    <div class="box one">
+                        <div class="overview-icon">
+                            <i class="fa-solid fa-arrow-up-right-dots"></i>
+                        </div>
+                        <div class="overview-info">
+                            <span class="num">83%</span>
+                            <span>Complete</span>
+                        </div>
+                    </div>
+                    <div class="box two">
+                        <div class="overview-icon">
+                            <i class="fa-brands fa-r-project"></i>
+                        </div>
+                        <div class="overview-info">
+                            <span class="num">25</span>
+                            <span>Projects</span>
+                        </div>
+                    </div>
+                    <div class="box three">
+                        <div class="overview-icon">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <div class="overview-info">
+                            <span class="num">182</span>
+                            <span>Viewers</span>
+                        </div>
+                    </div>
+                    <div class="box four">
+                        <div class="overview-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="overview-info">
+                            <span class="num">75%</span>
+                            <span>Complete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="analytics">
+                    <div class="analytics-box">
+                        <h2 class="main-title">Analytics</h2>
+                        <canvas id="sales"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
